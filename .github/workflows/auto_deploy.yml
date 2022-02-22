@@ -22,7 +22,23 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
-          echo `cat _config.next.yml`;
+          node
+          var fs = require('fs')
+          fs.readFile('_config.next.yml', function (error, data) {
+              if (error) {
+                  console.log('读取文件失败')
+              } else {
+                  fs.writeFile('_config.next.yml', data.toString().replace(/\$CLIENT_ID/g, 'Test').replace(/\$CLIENT_SECRET/g, 'Test2'), function (error) {
+                      if (error) {
+                          console.log('写入文件失败')
+                      } else {
+                          console.log('写入文件成功')
+                      }
+                  })
+              }
+          })
+          .exit
+          cat _config.next.yml;
       # - name: Deploy Hexo
       #   env:
       #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
