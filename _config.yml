@@ -71,7 +71,6 @@ index_generator:
 # Category & Tag
 default_category: other
 category_map:
-  人物: people
 tag_map:
 
 # Metadata elements
