@@ -16,7 +16,7 @@ date: 9999-12-31 23:59:59
     document.getElementById('page_post_point').parentElement.parentElement.children[4].style = "";
 </script>
 
-|<a href="https://gitee.com/Kuiba-Wiki/Kuiba-Wiki/new/master/source/_posts"><i class="fab fa-git fa-fw"></i> 在 Gitee 上发帖</a>|<a href="https://github.com/Kuiba-Wiki/Kuiba-Wiki.github.io/new/master/source/_posts"><i class="fab fa-github fa-fw"></i> 在 Github 上发帖</a>|
+|<a href="https://gitee.com/kuiba-wiki/kuiba-wiki/new/master/source/_posts"><i class="fab fa-git fa-fw"></i> 在 Gitee 上发帖</a>|<a href="https://github.com/Kuiba-Wiki/Kuiba-Wiki.github.io/new/master/source/_posts"><i class="fab fa-github fa-fw"></i> 在 Github 上发帖</a>|
 |-|-|
 |暂不支持自动部署，等待[仓库镜像管理](https://gitee.com/help/articles/4336)服务上线。|支持自动部署，基于 Github Actions 服务实现。|
 |使用此种方式编辑页面适用于几乎所有大陆地区用户，**使用此种方式请确保拥有一个 Gitee 账号，并保持登录状态。** |使用此种方式编辑页面大陆地区可能存在无法访问的情况，**使用此种方式请确保拥有一个 Github 账号，并保持登录状态。**|
