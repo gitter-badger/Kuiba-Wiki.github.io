@@ -22,7 +22,8 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
-          node .github/script/gitalk.js "$CLIENT_ID" "$CLIENT_SECRET"
+          chmod 600
+          node .github/script/gitalk.js $CLIENT_ID $CLIENT_SECRET
       # - name: Deploy Hexo
       #   env:
       #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
