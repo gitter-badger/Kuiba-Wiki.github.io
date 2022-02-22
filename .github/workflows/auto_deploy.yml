@@ -17,6 +17,17 @@ jobs:
         run: |
           npm install hexo-cli -g
           npm install
+      - name: Load Config
+        env: 
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          echo "CLIENT_ID: "
+          echo "$CLIENT_ID"
+          echo "CLIENT_SECRET: "
+          echo "$CLIENT_SECRET"
+          echo "_config.next.yml\n"
+          cat _config.next.yml
       - name: Deploy Hexo
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
