@@ -893,7 +893,3 @@ vendors:
 css: css
 js: js
 images: images
-
-gitalk:
-  client_id: ${{ secrets.CLIENT_ID }} # GitHub Application Client ID
-  client_secret: ${{ secrets.CLIENT_SECRET }} # GitHub Application Client Secret
