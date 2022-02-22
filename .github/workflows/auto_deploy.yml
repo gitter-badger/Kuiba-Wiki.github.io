@@ -18,26 +18,11 @@ jobs:
       #     npm install hexo-cli -g
       #     npm install
       - name: Load Config
-        # env: 
-        #   CLIENT_ID: ${{ secrets.CLIENT_ID }}
-        #   CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        env: 
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
-          node
-          var fs = require('fs')
-          fs.readFile('_config.next.yml', function (error, data) {
-              if (error) {
-                  console.log('读取文件失败')
-              } else {
-                  fs.writeFile('_config.next.yml', data.toString().replace(/\$CLIENT_ID/g, 'Test').replace(/\$CLIENT_SECRET/g, 'Test2'), function (error) {
-                      if (error) {
-                          console.log('写入文件失败')
-                      } else {
-                          console.log('写入文件成功')
-                      }
-                  })
-              }
-          })
-          .exit
+          node .github/script/gitalk.js "$CLIENT_ID" "$CLIENT_SECRET"
       # - name: Deploy Hexo
       #   env:
       #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
