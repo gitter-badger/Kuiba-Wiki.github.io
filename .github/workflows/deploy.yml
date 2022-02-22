@@ -1,0 +1,15 @@
+name: Auto Deploy
+
+on: workflow_dispatch
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync Github
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        uses: wearerequired/git-mirror-action@master
+        with:
+          source-repo: git@gitee.com:kuiba-wiki/kuiba-wiki.git
+          destination-repo: git@github.com:Kuiba-Wiki/Kuiba-Wiki.github.io.git
