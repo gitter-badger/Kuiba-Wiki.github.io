@@ -616,8 +616,8 @@ gitalk:
   enable: false
   github_id: Kuiba-Wiki # GitHub repo owner
   repo: Kuiba-Wiki.github.io # Repository name to store issues
-  client_id: ${{ secrets.CLIENT_ID }} # GitHub Application Client ID
-  client_secret: ${{ secrets.CLIENT_SECRET }} # GitHub Application Client Secret
+  client_id: $CLIENT_ID # GitHub Application Client ID
+  client_secret: $CLIENT_SECRET # GitHub Application Client Secret
   admin_user: CN-traveler # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
@@ -893,3 +893,7 @@ vendors:
 css: css
 js: js
 images: images
+
+gitalk:
+  client_id: ${{ secrets.CLIENT_ID }} # GitHub Application Client ID
+  client_secret: ${{ secrets.CLIENT_SECRET }} # GitHub Application Client Secret
