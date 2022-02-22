@@ -22,9 +22,7 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
-          echo "_config.next.yml\n"
-          echo "$CLIENT_ID 123"
-          cat _config.next.yml
+          snap install yq
       - name: Deploy Hexo
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
