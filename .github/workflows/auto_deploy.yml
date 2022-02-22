@@ -22,8 +22,8 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
-          chmod 600
           node .github/script/gitalk.js $CLIENT_ID $CLIENT_SECRET
+          cat _config.next.yml
       # - name: Deploy Hexo
       #   env:
       #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
