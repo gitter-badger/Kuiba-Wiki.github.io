@@ -1,5 +1,6 @@
 ---
 title: 编辑
+comments: false
 ---
 <div id="page_edit_point">
 <script>

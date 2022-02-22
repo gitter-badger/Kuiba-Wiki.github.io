@@ -1,6 +1,7 @@
 ---
 title: 快速开始
 date: 9999-12-31 23:59:59
+comments: false
 ---
 
 <div id="page_start_point"></div>

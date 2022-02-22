@@ -1,6 +1,7 @@
 ---
 title: 发帖
 date: 9999-12-31 23:59:59
+comments: false
 ---
 
 <div id="page_post_point"></div>
