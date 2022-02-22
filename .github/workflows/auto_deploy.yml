@@ -23,6 +23,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           echo "_config.next.yml\n"
+          echo "$CLIENT_ID 123"
           cat _config.next.yml
       - name: Deploy Hexo
         env:
