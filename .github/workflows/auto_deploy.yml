@@ -22,9 +22,7 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
-          config_next=$(cat _config.next.yml);
-          echo $config_next;
-          echo ${config_next/\$CLIENT_ID/"$CLIENT_ID"};
+          echo `cat _config.next.yml`;
       # - name: Deploy Hexo
       #   env:
       #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
