@@ -25,7 +25,7 @@ title: 编辑
         window.location.href = '/';
     }
     function gitee() {
-        window.location.href = 'https://gitee.com/Kuiba-Wiki/Kuiba-Wiki/edit/master/source/' + path;
+        window.location.href = 'https://gitee.com/kuiba-wiki/kuiba-wiki/edit/master/source/' + path;
     }
     function github() {
         window.location.href = 'https://github.com/Kuiba-Wiki/Kuiba-Wiki.github.io/edit/master/source/' + path;
