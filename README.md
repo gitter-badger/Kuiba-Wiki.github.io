@@ -4,11 +4,11 @@
 
 ## 发表文章
 
-1. 进入站点首页，点击文章顶部发帖链接。如图: ![发表文章 步骤一](111.png)
-1. 进入发帖页面，点击 Gitee 或 Github 链接。如图: ![发表文章 步骤二](112.png)
+1. 进入站点首页，点击文章顶部发帖链接。如图: ![发表文章 步骤一](https://kuiba-wiki.github.io/other/start/111.png)
+1. 进入发帖页面，点击 Gitee 或 Github 链接。如图: ![发表文章 步骤二](https://kuiba-wiki.github.io/other/start/112.png)
 1. 进入托管平台，如图所示操作:
-    1. Gitee: ![发表文章 步骤三](1131.png)
-    1. Github: 如果为首次发表，需 Fork 本仓库后方可继续操作 ![发表文章 步骤三](1132.png) ![发表文章 步骤三](1133.png) ![发表文章 步骤三](1134.png) ![发表文章 步骤三](1135.png)
+    1. Gitee: ![发表文章 步骤三](https://kuiba-wiki.github.io/other/start/1131.png)
+    1. Github: 如果为首次发表，需 Fork 本仓库后方可继续操作 ![发表文章 步骤三](https://kuiba-wiki.github.io/other/start/1132.png) ![发表文章 步骤三](https://kuiba-wiki.github.io/other/start/1133.png) ![发表文章 步骤三](https://kuiba-wiki.github.io/other/start/1134.png) ![发表文章 步骤三](https://kuiba-wiki.github.io/other/start/1135.png)
     1. 示例:
     ```txt 文件名称
     蛮吉.md
@@ -35,8 +35,8 @@
     发表人物介绍文章《蛮吉》。
     ```
 1. 等待仓库管理员审核:
-    1. Gitee: ![发表文章 步骤四](1141.png)
-    1. Github: ![发表文章 步骤四](1142.png)
+    1. Gitee: ![发表文章 步骤四](https://kuiba-wiki.github.io/other/start/1141.png)
+    1. Github: ![发表文章 步骤四](https://kuiba-wiki.github.io/other/start/1142.png)
 
 ## 编辑文章
 
