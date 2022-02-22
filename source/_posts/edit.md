@@ -33,7 +33,7 @@ title: 编辑
 </script>
 
 <style>
-    .post-footer, .post-edit-link {
+    .post-header, .post-footer, .post-edit-link {
         display: none;
     }
 </style>

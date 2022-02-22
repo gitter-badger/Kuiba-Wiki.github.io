@@ -23,7 +23,7 @@ date: 9999-12-31 23:59:59
 |Gitee 是一个主要面向中国大陆地区用户的代码开源平台，本 Wiki 依赖开源项目 Hexo + Gitee Pages / Github Pages 服务搭建。|Github 是一个面向全球用户的代码开源平台，本 Wiki 依赖开源项目 Hexo + Gitee Pages / Github Pages 服务搭建。|
 
 <style>
-    .post-title, .post-footer, .post-edit-link {
+    .post-header, .post-footer, .post-edit-link {
         display: none;
     }
 </style>
